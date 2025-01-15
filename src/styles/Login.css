@@ -1,0 +1,88 @@
+html, body {
+  background: rgb(31,31,31);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+.login-container {
+  background-color: #2c2f38; /* Dark background */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.login-container h2 {
+  font-size: 1.8rem;
+  color: #00bfff; /* Light blue for the title */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #e0e0e0; /* Light text color for labels */
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #495057; /* Darker border */
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #3e444e; /* Dark input background */
+  color: #e0e0e0; /* Light text color for inputs */
+}
+
+.form-group input:focus {
+  border-color: #00bfff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 191, 255, 0.3); /* Blue shadow on focus */
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  background-color: #00bfff; /* Light blue button */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #007bb5; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .login-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input {
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+  }
+}

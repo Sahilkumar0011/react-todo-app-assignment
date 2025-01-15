@@ -1,0 +1,59 @@
+.input-group {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.input-group input {
+  flex: 1; /* Make the input take most of the space */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #495057; /* Darker border for dark theme */
+  background-color: #343a40; /* Dark background for input */
+  color: #e1e1e1; /* Lighter text color */
+  border-radius: 4px 0 0 4px; /* Rounded corners for the left side */
+  outline: none; /* Remove default focus outline */
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #007bff; /* Highlight border on focus */
+  background-color: #495057; /* Slightly lighter background on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25); /* Subtle focus shadow */
+}
+
+.input-group .btn {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #ff3c00; /* Primary button color */
+  color: #fff; /* White text color */
+  border: none; /* Remove button border */
+  border-radius: 0 4px 4px 0; /* Rounded corners for the right side */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.input-group .btn:hover {
+  background-color: #e03e00; /* Darker shade on hover */
+}
+
+.input-group .btn:active {
+  transform: scale(0.98); /* Slightly shrink on click */
+}
+
+.input-group .btn:disabled {
+  background-color: #6c757d; /* Gray color for disabled state */
+  cursor: not-allowed; /* Change cursor to indicate disabled */
+}
+
+@media (max-width: 768px) {
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-group input,
+  .input-group .btn {
+    border-radius: 4px; /* Reset border radius for vertical layout */
+  }
+}

@@ -1,0 +1,86 @@
+.list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+  background-color: #343a40;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #495057;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item div:first-child {
+  font-size: 1rem;
+  color: #ffffff;
+  flex: 1;
+  margin-right: 10px;
+  word-wrap: break-word;
+}
+
+.list-group-item button {
+  font-size: 0.875rem;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.list-group-item button.btn-danger {
+  background-color: #e53e3e;
+  color: #fff;
+  font-weight: bold;
+  padding: 7px 14px;
+}
+
+.list-group-item button.btn-danger:hover {
+  background-color: #c53030;
+}
+
+.list-group-item button.btn-danger:active {
+  transform: scale(0.95);
+}
+
+.list-group-item select {
+  font-size: 0.875rem;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #6c757d;
+  border-radius: 4px;
+  background-color: #495057;
+  color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.list-group-item select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .list-group-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .list-group-item div:first-child {
+    margin-bottom: 10px;
+  }
+
+  .list-group-item button,
+  .list-group-item select {
+    margin-left: 5px;
+  }
+}
+.text-muted{
+  text-align: center;
+  color: #949494 !important;
+}

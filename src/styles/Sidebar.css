@@ -1,0 +1,122 @@
+/* Sidebar Style */
+.sidebar {
+  width: 250px;
+  padding: 20px;
+  background-color: #343a40;
+  border-right: 1px solid #6c757d;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keeps the logout button at the bottom */
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar button {
+  background: none;
+  border-radius: 17px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  color: #ffffff;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+
+.sidebar button[style*="bold"] {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.sidebar button:focus {
+  outline: none;
+}
+
+/* Logout button styles */
+.logout-btn {
+  width: 200px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 0 auto; /* Center horizontally on small screens */
+}
+
+/* Logout button hover and active state */
+.logout-btn:hover {
+  background-color: #bd2130;
+}
+
+.logout-btn:active {
+  transform: scale(0.98); /* Shrink effect on click */
+}
+
+/* Mobile and Tablet View (Below 768px width) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width for mobile */
+    height: auto;
+    border-right: none;
+    box-shadow: none;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+  }
+
+  .sidebar ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sidebar li {
+    margin-bottom: 0;
+  }
+
+  /* Ensure the logout button stays centered in the sidebar */
+  .logout-btn {
+    width: 200px;
+    margin-top: 20px; /* Add spacing above the button */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* When the width is less than 765px, center the logout button vertically */
+  .sidebar {
+    align-items: center; /* Centers the content horizontally */
+    justify-content: space-around; /* Ensures spacing around elements */
+  }
+
+  .logout-btn {
+    width: 200px;
+    margin-top: 20px; /* Add top margin for spacing */
+    align-self: center; /* Center the logout button horizontally and vertically */
+  }
+}
