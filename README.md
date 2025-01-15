@@ -12,7 +12,7 @@ This is a simple yet powerful **React Todo App** built using React.js. The app a
 ## **Screenshots**
 
 ### 1. **login Page**
-![project Screenshot](../todo_app/src/assets/Screenshot%202025-01-15%20124000.png)
+![project Screenshot](./src/assets/Screenshot%202025-01-15%20124000.png)
 
 ### 2. **Sidebar with Task Priorities**
 ![Home Screenshot](./src/assets/Screenshot%202025-01-15%20124159.png)
