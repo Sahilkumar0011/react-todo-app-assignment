@@ -1,7 +1,6 @@
-const API_KEY = '7851e3b635a3493084a114415251401';  // Replace with your WeatherAPI.com API key
+const API_KEY = '7851e3b635a3493084a114415251401';  
 const BASE_URL = 'http://api.weatherapi.com/v1';
 
-// Function to fetch current weather for a given location
 const fetchCurrentWeather = async (location) => {
   try {
     const response = await fetch(`${BASE_URL}/current.json?key=${API_KEY}&q=${location}`);
@@ -25,7 +24,7 @@ const fetchCurrentWeather = async (location) => {
     };
   } catch (error) {
     console.error('Error fetching weather data:', error);
-    throw new Error(error.message);  // Re-throw the error to be handled by the caller
+    throw new Error(error.message);  
   }
 };
 
@@ -52,7 +51,7 @@ const fetchWeatherForecast = async (location, days = 7) => {
     }));
   } catch (error) {
     console.error('Error fetching weather forecast:', error);
-    throw new Error(error.message);  // Re-throw the error to be handled by the caller
+    throw new Error(error.message); 
   }
 };
 
@@ -79,11 +78,11 @@ const searchCities = async (query) => {
     }));
   } catch (error) {
     console.error('Error searching cities:', error);
-    throw new Error(error.message);  // Re-throw the error to be handled by the caller
+    throw new Error(error.message);  
   }
 };
 
-// Export the functions for use in other parts of the app
+
 export const fetchWeather = fetchCurrentWeather;
 export const fetchForecast = fetchWeatherForecast;
 export const searchCitiesByName = searchCities;
